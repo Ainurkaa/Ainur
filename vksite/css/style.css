@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+a {
+    color: #4B0082;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2dcdcc8;
+}
+
+
+
+/* GET STARTED */
+
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 10px 160px;
+    display: flex;
+    align-items: center;
+    background-color: #4c77a7;
+    text-align: center;
+}
+
+.header a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 130px;
+   
+}
+
+.search i {
+    position: absolute;
+    margin: 9px 0 0 15px;
+    color: #e2dcdcc8;
+}
+
+.search input {
+    background-color: #1f4777;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #e2dcdcc8;
+}
+
+.search input::placeholder {
+    color: #e2dcdcc8;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.main {
+    padding: 20px 150px 50px 150px;
+    display: flex;
+    background-color: #e2dcdcc8;
+    color: #323a5cd8;
+}
+
+.links {
+    width:13%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+}
+
+.links a {
+    color: #323a5cd8;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.friends_container {
+    margin: 10px 0 0 50px;
+    width: 65%;
+    background-color: #FFF;
+    border-radius: 7px;
+}
+
+.title_block_list_friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.my_friends_title_block {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.my_friends_title_block span {
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+.all_friends_title h1, .online_friends_title h1 {
+    cursor: pointer;
+}
+
+.online_friends_title {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.find_friends_title h1 {
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #1f4777;
+    font-weight: 500;
+}
+
+.search_block_list_friends {
+    border-top: 1px solid #5c5c5c;
+    padding: 15px 20px;
+}
+
+.search_block_list_friends i svg {
+    position: absolute;
+    margin-left: -5px;
+}
+
+.search_block_list_friends input {
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+}
+
+.search_block_list_friends input::placeholder {
+    font-size: 14px;
+}
+
+.search_block_list_friends input:focus {
+    outline: none;
+}
+
+.friend_list_block {
+    display: flex;
+    padding: 15px 25px;
+    border-top: 1px solid #5c5c5c;
+}
+
+.photo_friend {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info_block_friend_list {
+    margin: 5px 0 0 20px;
+}
+
+.info_block_friend_list h1 a {
+    color: #000;
+    font-weight: 600;
+}
+
+.info_block_friend_list h1 a:hover, .info_block_friend_list p:hover, .info_block_friend_list span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info_block_friend_list p {
+    padding: 10px 0 15px 0;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+.different_window_friends {
+    width: 260px;
+    position: absolute;
+    margin-top: 10px;
+    right: 50px;
+}
+
+.filter_friends_container {
+    border-radius: 7px;
+    background-color: #FFF;
+}
+
+.any_filters_friend {
+    color: #000;
+    padding: 15px 25px;
+}
+
+.any_filters_friend:hover {
+    background-color: #e2dcdcc8;
+    cursor: pointer;
+}
+
+.list_friends {
+    display: flex;
+}
+
+.list_friends h1 {
+    font-weight: 500;
+}
+
+.list_friends i {
+    margin-left: 5px;
+}
+
+.possible_friends_list {
+    margin-top: 30px;
+    background-color: #FFF;
+    width: 260px;
+    border-radius: 7px;
+}
+
+.possible_friends_title_block h1 {
+    padding: 15px 0 10px 15px;
+    color: #000;
+}
+
+.possible_friend_list_block {
+    display: flex;
+    padding: 15px;
+}
+
+.photo_possible_friend {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info_block_possible_friend_list {
+    margin-left: 15px;
+}
+
+.info_block_possible_friend_list h1 a {
+    color: #000;
+    font-weight: 600;
+}
+
+.info_block_possible_friend_list h1 a:hover, .info_block_possible_friend_list p:hover, .info_block_possible_friend_list span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info_block_possible_friend_list p {
+    padding: 7px 0;
+    color: #5c5c5c;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.info_block_possible_friend_list span {
+    font-size: 14px;
+}
