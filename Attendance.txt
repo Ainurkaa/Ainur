@@ -1,5 +1,0 @@
-ATTENDACE SYSTEM
-Student:Diana Omarbayeva     Time:0:3:34
-Student:Ainur Dossan     Time:0:3:57
-Student:Amirkhan Kadyrkhan     Time:0:4:3
-Student:Daniyar Yelubayev     Time:0:4:8
