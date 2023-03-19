@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+select{
+    margin-top: 40px;
+   
+}
+
+</style>
+<body>
+    <div style="padding: 0; border: 1px solid rgb(219, 211, 211); width:70% " >
+        <table cellpadding="10px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Введите сумму: </label><br><br>
+                        <input type="text" style="padding: 5px 17px;" id= "input">
+                    </td>
+                    <td>
+                        <select name="" id="select">
+                            <option value="KZT">KZT</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>KZT(tenge)</label><br><br>
+                        <input type="text" style=" padding: 5px 30px; background-color: rgb(207, 199, 199); " id="result">
+                    </td>
+                    <td>
+                        <label>USD(dollar)</label><br><br>
+                        <input type="text" style=" padding: 5px 30px;background-color: rgb(207, 199, 199);" id="result1">
+                    </td>
+                    <td>
+                        <label>EUR(euro)</label><br><br>
+                        <input type="text" style=" padding: 5px 30px;background-color: rgb(207, 199, 199);;" id="result2">
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+
+<script>
+    const rates = {
+
+    };
+    const elementUSD = document.querySelector('[data-value = "USD"]');
+    const elementEUR = document.querySelector('[data-value = "EUR"]');
+    const elementKZT = document.querySelector('[data-value = "KZT"]');
+    const input = document.querySelector('#input');
+    const result = document.querySelector('#result');
+    const result1 = document.querySelector('#result1');
+    const result2 = document.querySelector('#result2');
+    const select = document.querySelector('#select');
+    input.oninput = function(){
+        if(select.value == "KZT"){
+        console.log("Changed!");
+        result1.value= (parseFloat(input.value)/ 431).toFixed(2);
+        result2.value= (parseFloat(input.value)/ 507).toFixed(2);
+        result.value = "-";
+        }
+        else if(select.value == "USD"){
+            console.log("Changed!");
+            result.value= (parseFloat(input.value)* 429).toFixed(2);
+            result2.value= ((parseFloat(input.value)* 429)/509).toFixed(2);
+            result1.value = "-";
+        }
+        else if(select.value == "EUR"){
+            console.log("Changed!");
+            result.value= (parseFloat(input.value)* 507).toFixed(2);
+            result1.value= ((parseFloat(input.value)* 507)/431).toFixed(2);
+            result2.value = "-";
+        }
+            
+    }
+    select.oninput = function(){
+    if(select.value == "KZT"){
+    console.log("Changed!");
+    result1.value= (parseFloat(input.value)/ 429).toFixed(2);
+    result2.value= (parseFloat(input.value)/ 507).toFixed(2);
+    result.value = "-";
+    }
+     else if(select.value == "USD"){
+        console.log("Changed!");
+        result.value= (parseFloat(input.value)* 429).toFixed(2);
+        result2.value= ((parseFloat(input.value)* 429)/509).toFixed(2);
+        result1.value = "-";
+    }
+     else if(select.value == "EUR"){
+        console.log("Changed!");
+        result.value= (parseFloat(input.value)* 507).toFixed(2);
+        result1.value= ((parseFloat(input.value)* 507)/431).toFixed(2);
+        result2.value = "-";
+    }
+}
+
+</script>
+</body>
+</html>
