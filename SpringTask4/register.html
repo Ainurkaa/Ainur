@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task4.css">
+    <title>Twitter</title>
+</head>
+
+<body>
+    <div class="basy">
+        <h1 class="first">Twitter</h1>
+        <a href="#">TWEETS</a>
+        <a href="login.html" id = "btn" onclick="sign()">LOGIN</a>
+        <a href="#" id = "btn1">REGISTER</a>
+    </div>
+    <script>
+       
+    </script>
+    <form id="regis" action="" method="post">
+        <div class="next" id="reg">
+            <div class="second">
+                <p>EMAIL:</p>
+            </div>
+            <div>
+                <input type="text" id="email" size="30" required>
+            </div>
+            <div class="second">
+                <p>PASSWORD:</p>
+            </div>
+            <div>
+                <input type="text" id="password" size="30" required>
+            </div>
+            <div class="second">
+                <p>FULL NAME:</p>
+            </div>
+            <div>
+                <input type="text" id="fname" size="30" required>
+            </div>
+            <div class="second">
+                <p>COUNTRY:</p>
+            </div>
+            <div class="sel">
+                <select id="country" >
+                    <option>Kazakhstan</option>
+                    <option>Russia</option>
+                    <option>Uzbekistan</option>
+                    <option>China</option>
+                    <option>USA</option>
+                    <option>France</option>
+                </select>
+            </div>
+            <div class="second">
+                <p>BIRTHDATE:</p>
+            </div>
+            <div>
+                <input type="date" id="bdate" size="30" style=" padding: 2px 70px" required>
+            </div>
+            <div>
+                <button onclick="reg()">REGISTER</button>
+            </div>
+        </div>
+    </form>
+    <script src="js.js"></script>
+
+</body>
+
+</html>
